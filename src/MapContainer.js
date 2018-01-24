@@ -15,7 +15,8 @@ export class MapContainer extends Component {
       <div className="map-container">
         <Map 
           google={this.props.google} 
-          zoom={14} 
+          zoom={14}
+          gestureHandling={'cooperative'} 
           style={tc_style}
           initialCenter={top_city} >
           <Marker 
