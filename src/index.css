@@ -1,0 +1,83 @@
+body {
+  padding: 20px; 
+  margin: 0;
+}
+h1 {
+  font-family: 'Bungee Shade', sans-serif; 
+}
+h2, p, ul, li {
+  font-family: 'Bungee Hairline', sans-serif; 
+  font-weight: bold; 
+}
+ul.header li {
+  font-family: 'Bungee Inline', sans-serif; 
+  font-size: 1.5em; 
+  display: inline; 
+  list-style-type: none; 
+  margin: 0; 
+}
+ul.header {
+  padding: 0; 
+  text-align: center; 
+}
+ul.header li a {
+  text-decoration: none; 
+  padding: 20px; 
+  display: inline-block; 
+  transition: color 0.4s ease 0s;
+    transition-property: color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s; 
+}
+a {
+  color: #FF00BB; 
+}
+ul.header li a:hover {
+  color: #F1CC01; 
+}
+.active {
+  color: #F1CC01; 
+}
+.content {
+  background-color: #FFF;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.centered {
+  margin: auto; 
+  width: 99%; 
+  text-align: center; 
+}
+.top {
+  margin-top: 50px; 
+  margin-bottom: 50px; 
+}
+.top h1 {
+  font-size: 4em; 
+}
+.page {
+  width: 95%; 
+  margin: auto; 
+  text-align: center; 
+  padding-top: 0px; 
+}
+.underline {
+  text-decoration: underline; 
+}
+.footer {
+  margin-top: 40px; 
+}
+.map-container {
+  padding: 20px; 
+  display: block; 
+  width: 400px; 
+  height: 300px; 
+  margin: auto;   
+}
+
