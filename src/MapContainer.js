@@ -2,24 +2,26 @@ import React, { Component } from "react";
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react'; 
 export class MapContainer extends Component {
   render() {
-    return( 
+    var top_city = {
+      lat: 40.7029316,   
+      lng: -73.9178615  
+    }
+    var tc_style = {
+      width: '450px', 
+      height: '300px'
+    }
+
+    return(     
       <div className="map-container">
         <Map 
           google={this.props.google} 
-          zoom={7} 
-          className={'map'}
-          style={{
-            width: '400px', 
-            height: '300px'
-          }}
-          initialCenter={{
-            lat: 40.8, 
-            lng: -88.08
-          }} >
+          zoom={14} 
+          style={tc_style}
+          initialCenter={top_city} >
           <Marker 
             title={'Yummies here!'}
             name={'Top City Gourmet'}
-            position={{lat: 40.8, lng: -88.08}} />
+            position={top_city} />
         </Map>
       </div>
     ); 
