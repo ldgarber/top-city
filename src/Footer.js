@@ -23,7 +23,7 @@ class Footer extends Component {
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `250px` }} className="map-container" />}
-          mapElement={<div style={{ height: `250px`, width: `400px` }} className="map" />}
+          mapElement={<div style={{ height: `230px`, width: `460px` }} className="map" />}
         />
 
         <div className="centered">

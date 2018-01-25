@@ -5,6 +5,8 @@ const MapContainer = withScriptjs(withGoogleMap((props) =>
   <GoogleMap
     defaultZoom={14}
     defaultCenter={{ lat: 40.702831, lng: -73.9195097 }}
+    defaultMapTypeId={'roadmap'}
+    options={{mapTypeControl: false}}
   >
     {props.markerIsShown && <Marker position={{ lat: 40.702831, lng: -73.9195097 }} />}
   </GoogleMap>
