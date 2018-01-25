@@ -1,5 +1,4 @@
 body {
-  padding: 20px; 
   margin: 0;
 }
 h1 {
@@ -65,7 +64,8 @@ ul.header li a:hover {
   margin-bottom: 20px; 
 }
 .page {
-  width: 95%; 
+  width: 100%; 
+  min-width: 950px;  
   height: 450px;  
   margin: auto; 
   text-align: center; 
