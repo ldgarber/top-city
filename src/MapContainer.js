@@ -1,34 +1,14 @@
-import React, { Component } from "react"; 
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react'; 
-export class MapContainer extends Component {
-  render() {
-    var top_city = {
-      lat: 40.7029316,   
-      lng: -73.9178615  
-    }
-    var tc_style = {
-      width: '450px', 
-      height: '300px'
-    }
+import React from "react"; 
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
-    return(     
-      <div className="map-container">
-        <Map 
-          google={this.props.google} 
-          zoom={14}
-          gestureHandling={'cooperative'} 
-          style={tc_style}
-          initialCenter={top_city} >
-          <Marker 
-            title={'Yummies here!'}
-            name={'Top City Gourmet'}
-            position={top_city} />
-        </Map>
-      </div>
-    ); 
-  }
-}
+const MapContainer = withScriptjs(withGoogleMap((props) => 
+  <GoogleMap
+    defaultZoom={14}
+    defaultCenter={{ lat: 40.702831, lng: -73.9195097 }}
+  >
+    {props.markerIsShown && <Marker position={{ lat: 40.702831, lng: -73.9195097 }} />}
+  </GoogleMap>
+))
 
-export default GoogleApiWrapper({
-  apiKey: ("AIzaSyDMDpzAIa_THrUf7eEuWkXv7RIaDHYUl80")
-})(MapContainer)
+export default MapContainer; 
+

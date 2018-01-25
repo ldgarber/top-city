@@ -20,7 +20,6 @@ class Main extends Component {
             <li><NavLink exact to="/">HOME</NavLink></li>
             <li><NavLink to="/stuff">STUFF</NavLink></li>
             <li><NavLink to="/contact">CONTACT</NavLink></li>
-            //more menu items!
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>

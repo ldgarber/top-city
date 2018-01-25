@@ -18,7 +18,13 @@ class Footer extends Component {
           <p>{"(Don't drink in the store though)"}</p>
         </div>
 
-        <MapContainer />
+        <MapContainer 
+          markerIsShown
+          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places"
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `250px` }} className="map-container" />}
+          mapElement={<div style={{ height: `250px`, width: `400px` }} className="map" />}
+        />
 
         <div className="centered">
           <p>144 WYCKOFF AVE, BROOKLYN, NY 11237</p>

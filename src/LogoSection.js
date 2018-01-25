@@ -5,7 +5,7 @@ class LogoSection extends Component {
     return(
       <div className="top centered">
         <p>Logo here</p>
-        <h1>TOP CITY GOURMET</h1>
+        <a href="/">TOP CITY GOURMET</a>
       </div>
     ); 
   }
