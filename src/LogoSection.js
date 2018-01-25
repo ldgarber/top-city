@@ -4,7 +4,8 @@ class LogoSection extends Component {
   render() {
     return(
       <div className="top centered">
-        <p>Logo here</p>
+        <img src={"/images/logo.png"} alt="logo" height="50" width="60"/>
+        <br></br>
         <a href="/">TOP CITY GOURMET</a>
       </div>
     ); 
