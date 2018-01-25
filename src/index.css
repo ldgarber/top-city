@@ -80,4 +80,15 @@ ul.header li a:hover {
   margin: auto; 
   border: 1px solid black; 
 }
-
+.container {
+  position: relative; 
+}
+.center-text {
+  color: white; 
+  font-family: "Bungee Shade", sans-serif; 
+  font-size: 4em; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
