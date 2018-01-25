@@ -1,13 +1,14 @@
 import React, { Component } from "react"; 
 
-class About extends Component {
+class Lunch extends Component {
   render() {
     return (
       <div className="page">
+          <img src={"/images/menu-2.jpg"} alt="top city"/>
       </div>
     );  
   }
 }
 
-export default About; 
+export default Lunch; 
 

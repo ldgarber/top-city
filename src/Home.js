@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <div className="page">
         <div className="container">
-          <img src={"/images/top-city.jpg"} alt="top city"/>
+          <img src={"/images/top-city-sepia.jpg"} width="980px" height="449px" alt="top city"/>
           <div className="center-text">A NEIGHBORHOOD JOINT</div>
         </div>
       </div>

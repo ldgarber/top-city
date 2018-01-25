@@ -7,7 +7,7 @@ import {
 import Home from "./Home"; 
 import Stuff from "./Stuff"; 
 import Menu from "./Menu"; 
-import About from "./About"; 
+import Lunch from "./Lunch"; 
 import Delivery from "./Delivery"; 
 import Contact from "./Contact"; 
 import Insta from "./Insta";  
@@ -23,8 +23,8 @@ class Main extends Component {
           <ul className="header">
             <li><NavLink exact to="/">HOME</NavLink></li>
             <li><NavLink to="/stuff">STUFF</NavLink></li>
-            <li><NavLink to="/menu">MENU</NavLink></li>
-            <li><NavLink to="/about">ABOUT</NavLink></li>
+            <li><NavLink to="/menu">BREAKFAST</NavLink></li>
+            <li><NavLink to="/lunch">SANDWICHES</NavLink></li>
             <li><NavLink to="/delivery">DELIVERY?</NavLink></li>
             <li><NavLink to="/contact">CONTACT</NavLink></li>
             <li><NavLink to="/insta">INSTA</NavLink></li>
@@ -34,7 +34,7 @@ class Main extends Component {
             <Route exact path="/" component={Home}/>
             <Route path="/stuff" component={Stuff} />
             <Route path="/menu" component={Menu} />
-            <Route path="/about" component={About} />
+            <Route path="/lunch" component={Lunch} />
             <Route path="/delivery" component={Delivery} />
             <Route path="/contact" component={Contact} />
             <Route path="/insta" component={Insta} />
