@@ -27,7 +27,6 @@ class Main extends Component {
             <li><NavLink to="/lunch">SANDWICHES</NavLink></li>
             <li><NavLink to="/delivery">DELIVERY?</NavLink></li>
             <li><NavLink to="/contact">CONTACT</NavLink></li>
-            <li><NavLink to="/insta">INSTA</NavLink></li>
 
           </ul>
           <div className="content">
