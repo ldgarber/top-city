@@ -3,6 +3,8 @@ import MapContainer from "./MapContainer";
 
 class Footer extends Component {
   render() {
+    const googleApiKey = "AIzaSyCafaB1ep_JSkye8jnRnTQewEhS5GU5orQ"
+    const googleUrl = "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=" + googleApiKey 
     return (
       <div className="footer">
         <div className="centered">
@@ -20,7 +22,7 @@ class Footer extends Component {
 
         <MapContainer 
           markerIsShown
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=GOOGLE_API_KEY&v=3.exp&libraries=geometry,drawing,places"
+          googleMapURL={googleUrl}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `250px` }} className="map-container" />}
           mapElement={<div style={{ height: `230px`, width: `460px` }} className="map" />}
